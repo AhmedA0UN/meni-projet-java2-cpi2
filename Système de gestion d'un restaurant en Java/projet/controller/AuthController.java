@@ -1,7 +1,7 @@
 package projet.controller;
 
-import dao.UtilisateurDAO;
-import model.Utilisateur;
+import projet.dao.UtilisateurDAO;
+import projet.model.Utilisateur;
 
 public class AuthController {
     private UtilisateurDAO utilisateurDAO = new UtilisateurDAO();

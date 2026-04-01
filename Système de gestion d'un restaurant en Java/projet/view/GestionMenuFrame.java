@@ -1,8 +1,8 @@
 package projet.view;
 
-import controller.MenuController;
-import model.Plat;
-import model.Menu;
+import projet.controller.MenuController;
+import projet.model.Plat;
+import projet.model.Menu;
 
 import javax.swing.*;
 import javax.swing.table.*;

@@ -1,6 +1,6 @@
 package projet.view;
 
-import model.Utilisateur;
+import projet.model.Utilisateur;
 import javax.swing.*;
 import java.awt.*;
 

@@ -1,8 +1,8 @@
 package projet.view;
 
-import model.Utilisateur;
-import controller.MenuController;
-import controller.CommandeController;
+import projet.model.Utilisateur;
+import projet.controller.MenuController;
+import projet.controller.CommandeController;
 
 import javax.swing.*;
 import java.awt.*;

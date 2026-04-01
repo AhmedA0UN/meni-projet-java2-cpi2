@@ -1,12 +1,12 @@
 package projet.controller;
 
-import dao.CommandeDAO;
-import dao.LigneCommandeDAO;
-import dao.FactureDAO;
-import model.Commande;
-import model.LigneCommande;
-import model.Facture;
-import model.Plat;
+import projet.dao.CommandeDAO;
+import projet.dao.LigneCommandeDAO;
+import projet.dao.FactureDAO;
+import projet.model.Commande;
+import projet.model.LigneCommande;
+import projet.model.Facture;
+import projet.model.Plat;
 
 import java.util.List;
 
