@@ -1,7 +1,7 @@
 package projet.view;
 
 import projet.model.Utilisateur;
-import projet.controller.MenuControll;
+import projet.controller.MenuController;
 import projet.controller.CommandeController;
 
 import javax.swing.*;
@@ -28,13 +28,13 @@ public class DashboardClientFrame extends JFrame {
         lblBienvenue.setFont(new Font("Arial", Font.BOLD, 16));
         panel.add(lblBienvenue, BorderLayout.NORTH);
 
-        // Boutons du client
+        
         JPanel btnPanel = new JPanel(new GridLayout(1, 2, 20, 0));
         JButton btnMenu    = new JButton("Parcourir le Menu");
         JButton btnCommande= new JButton("Passer une Commande");
         btnMenu.setFont(new Font("Arial", Font.BOLD, 13));
         btnCommande.setFont(new Font("Arial", Font.BOLD, 13));
-        btnMenu.addActionListener(e -> new GestionMenuFrame()); // vue lecture seule
+        btnMenu.addActionListener(e -> new GestionMenuFrame()); 
         btnPanel.add(btnMenu);
         btnPanel.add(btnCommande);
         panel.add(btnPanel, BorderLayout.CENTER);

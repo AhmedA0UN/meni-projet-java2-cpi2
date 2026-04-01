@@ -1,7 +1,7 @@
 package projet.controller;
 
 import projet.dao.CommandeDAO;
-import projet.dao.LigneCommandeDAO;
+import projet.dao.CommandeDAO;
 import projet.dao.FactureDAO;
 import projet.model.Commande;
 import projet.model.LigneCommande;
