@@ -1,4 +1,4 @@
-# <!--meni-projet-java2-cpi2 -->
+# meni-projet-java2-cpi2 
 
 
 
@@ -1072,7 +1072,7 @@ Ce projet a permis de mettre en pratique les concepts fondamentaux de la \*\*Pro
 
 
 
-\*Documentation générée pour le Mini-Projet POO — CPI 2 — ISIMG Gabès — 2025/2026\*
+\*Documentation pour le Mini-Projet POO — CPI 2 — ISIMG Gabès — 2025/2026\*
 
 
 
