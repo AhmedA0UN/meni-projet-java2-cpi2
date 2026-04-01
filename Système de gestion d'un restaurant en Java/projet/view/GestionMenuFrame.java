@@ -30,7 +30,7 @@ public class GestionMenuFrame extends JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
-        // === Table des plats ===
+        
         String[] colonnes = {"ID", "Nom du plat", "Description", "Prix (TND)", "Disponible", "Menu"};
         tableModel = new DefaultTableModel(colonnes, 0) {
             @Override public boolean isCellEditable(int r, int c) { return false; }
@@ -41,13 +41,13 @@ public class GestionMenuFrame extends JFrame {
         table.getTableHeader().setFont(new Font("Arial", Font.BOLD, 12));
         table.setFont(new Font("Arial", Font.PLAIN, 12));
 
-        // Masquer colonne ID
+        
         table.getColumnModel().getColumn(0).setMinWidth(0);
         table.getColumnModel().getColumn(0).setMaxWidth(0);
 
         JScrollPane scrollPane = new JScrollPane(table);
 
-        // === Filtre par menu ===
+        
         JPanel topPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
         topPanel.add(new JLabel("Filtrer par menu :"));
         cbxMenuFilter = new JComboBox<>();
@@ -56,7 +56,7 @@ public class GestionMenuFrame extends JFrame {
         cbxMenuFilter.addActionListener(e -> chargerPlats());
         topPanel.add(cbxMenuFilter);
 
-        // === Boutons ===
+        
         JPanel btnPanel = new JPanel(new FlowLayout(FlowLayout.CENTER, 12, 10));
 
         btnAjouter     = creerBouton("Ajouter",      new Color(34, 139, 34));
@@ -71,14 +71,14 @@ public class GestionMenuFrame extends JFrame {
         btnPanel.add(btnEnregistrer);
         btnPanel.add(btnFermer);
 
-        // === Actions des boutons ===
+        
         btnAjouter.addActionListener(e -> actionAjouter());
         btnModifier.addActionListener(e -> actionModifier());
         btnSupprimer.addActionListener(e -> actionSupprimer());
         btnEnregistrer.addActionListener(e -> actionEnregistrer());
         btnFermer.addActionListener(e -> dispose());
 
-        // === Layout ===
+    
         setLayout(new BorderLayout(5, 5));
         add(topPanel,   BorderLayout.NORTH);
         add(scrollPane, BorderLayout.CENTER);
