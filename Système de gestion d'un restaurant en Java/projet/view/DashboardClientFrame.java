@@ -1,7 +1,7 @@
 package projet.view;
 
 import projet.model.Utilisateur;
-import projet.controller.MenuController;
+import projet.controller.MenuControll;
 import projet.controller.CommandeController;
 
 import javax.swing.*;
