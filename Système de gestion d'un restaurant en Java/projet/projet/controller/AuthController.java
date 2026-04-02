@@ -1,0 +1,35 @@
+package controller;
+
+import dao.UtilisateurDAO;
+import model.Utilisateur;
+
+public class AuthController {
+    private UtilisateurDAO utilisateurDAO = new UtilisateurDAO();
+    private Utilisateur utilisateurConnecte = null;
+
+    /** Tentative de connexion. Retourne true si succès. */
+    public boolean login(String username, String password) {
+        if (username == null || username.isBlank() ||
+            password == null || password.isBlank()) {
+            return false;
+        }
+        utilisateurConnecte = utilisateurDAO.authenticate(username, password);
+        return utilisateurConnecte != null;
+    }
+
+    public void logout() {
+        utilisateurConnecte = null;
+    }
+
+    public Utilisateur getUtilisateurConnecte() {
+        return utilisateurConnecte;
+    }
+
+    public boolean isLoggedIn() {
+        return utilisateurConnecte != null;
+    }
+
+    public String getRole() {
+        return isLoggedIn() ? utilisateurConnecte.getRole() : "";
+    }
+}
